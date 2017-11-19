@@ -16,6 +16,7 @@
   "author": "laghaqa",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^3.5.0",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.15.4",
     "mongoose": "^4.13.0",
