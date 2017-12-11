@@ -21,7 +21,7 @@ module.exports = app => {
   app.get('/api/logout', (req, res) => {
     //Create logout functuin which is added by passport
     req.logout();
-    res.send(req.user);
+    res.redirect('/');
   });
   app.get('/api/currentuser', (req, res) => {
     res.send(req.user);
