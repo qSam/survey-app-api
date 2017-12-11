@@ -12,7 +12,10 @@ module.exports = app => {
     '/auth/google/callback',
     passport.authenticate('google', {
       scope: 'https://www.googleapis.com/auth/plus.login'
-    })
+    }),
+    (req, res) => {
+      res.redirect('/surveys');
+    }
   );
 
   app.get('/api/logout', (req, res) => {
