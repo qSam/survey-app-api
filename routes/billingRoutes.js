@@ -4,5 +4,6 @@ const stripe = require('stripe')(keys.stripeSecretKey);
 module.exports = app => {
   app.post('/api/stripe', (req, res) => {
     //Add post stripe logic
+    console.log(req.body);
   });
 };
