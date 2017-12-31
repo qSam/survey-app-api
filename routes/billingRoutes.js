@@ -3,7 +3,7 @@ const stripe = require('stripe')(keys.stripeSecretKey);
 
 module.exports = app => {
   app.post('/api/stripe', async (req, res) => {
-    //Add post stripe logic
+    //Add post stripe logic to api
     if (!req.user) {
       return res.status(401).send({
         error: 'You must log in for stripe transaction!'
